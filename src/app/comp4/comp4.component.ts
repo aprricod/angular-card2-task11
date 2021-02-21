@@ -2,14 +2,20 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'comp4',
-  templateUrl: './comp4.component.html',
-  styleUrls: ['./comp4.component.css']
+  template: `<div class="comp4">
+    <p>comp4 works!</p>
+  </div>`,
+  styles: [
+    `
+      .comp4 {
+        color: red;
+        font-style: italic;
+      }
+    `,
+  ],
 })
 export class Comp4Component implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
